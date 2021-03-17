@@ -1,12 +1,12 @@
-#Code competition usage document
+# Code competition usage document
 
-##GET {domain}/challenge
+## GET {domain}/challenge
 You will receive a json object with all challenges.
 
-##GET {domain}/challenge/highScore?id={1,2,3}
+## GET {domain}/challenge/highScore?id={1,2,3}
 You will receive a json object with the top 5 scores of the specified id 1,2 or 3.
 
-##POST {domain}/challenge/submitScore
+## POST {domain}/challenge/submitScore
 Body is a raw JSON with the values of taskId which you get from the first get request. Language choice code see https://rextester.com/main for that. Input: your code. Tips: You can use https://www.freeformatter.com/json-escape.html to escape everything so that you will not get any errors. You can also unescape the request body in the same link to read the Python code in the examples. Name: the name in your high score. Examples of request bodies.
 
 {
