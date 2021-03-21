@@ -14,7 +14,7 @@ public class IsPrime implements Challenge{
 
     @Override
     public double getScore(String input, String output, Stats stats) {
-        if(output.equals("10110")){
+        if(!output.equals("10110\n")){
             return 0;
         }
         if(input.length() < 200){
